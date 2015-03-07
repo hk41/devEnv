@@ -1,0 +1,10 @@
+source "https://api.berkshelf.com"
+
+cookbook 'yum-epel', '~> 0.5.3'
+cookbook 'yum-remi', git: 'git://github.com/aiming-cookbooks/yum-remi.git'
+cookbook 'selinux'
+cookbook 'apache2'
+cookbook 'php', '~> 1.5.0'
+cookbook 'vim'
+cookbook 'git'
+cookbook 'imagemagick'

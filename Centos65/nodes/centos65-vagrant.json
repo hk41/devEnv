@@ -1,0 +1,20 @@
+{
+  "httpd": {
+    "port": 80
+  },
+  "mysql" : {
+    "server_root_password" : ""
+  },
+  "run_list": [
+    "recipe[wrapper_cookbook]",
+    "recipe[yum-remi]",
+    "recipe[php]",
+    "recipe[base_packages]",
+    "recipe[imagemagick]",
+    "recipe[httpd]",
+    "recipe[iptables]"
+  ],
+  "automatic": {
+    "ipaddress": "centos65-vagrant"
+  }
+}
